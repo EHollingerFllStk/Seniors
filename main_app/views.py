@@ -21,6 +21,6 @@ class Agencies:
 
 agencies = [
   Agencies('First Light Home Care','555 Bryn Mawr Ave. Bryn Mawr, PA 19634', '610-638-0638', 3),
-  Agencies('Visiting Angels Home Care','521 Bryn Mawr Ave. Bryn Mawr, PA 19634', '610-638-0638', 3),
-  Agencies('Senior Living Home Health Care','523 Bryn Mawr Ave. Bryn Mawr, PA 19634', '610-638-0638', 4),
+  Agencies('Visiting Angels Home Care','521 Bryn Mawr Ave. Bryn Mawr, PA 19634', '610-638-0639', 3),
+  Agencies('Senior Living Home Health Care','523 Bryn Mawr Ave. Bryn Mawr, PA 19634', '610-638-0631', 4),
 ]
