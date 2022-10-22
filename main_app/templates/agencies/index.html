@@ -4,12 +4,16 @@
 <h1>Agencies List</h1>
 
 {% for agency in agencies %}
+
+
 <div class="card">
+  <a href="{% url 'detail' agency.id %}">
   <div class="card-content">
     <span class="card-title">{{ agency.name }}</span>
     <p>Address: {{ agency.address }}</p>
     <p>Phone: {{ agency.phone }}</p>
     <p>Rating: {{ agency.rating }} </p>
   </div>
+  </a>
 </div>
 {% endfor %} {% endblock %}

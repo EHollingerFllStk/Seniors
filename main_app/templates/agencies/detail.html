@@ -1,0 +1,17 @@
+
+{% extends 'base.html' %} {% block content %}
+
+<h1>Agency Details</h1>
+
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">{{ agency.name }}</span>
+    <p>Address: {{ agency.address }}</p>
+    <p>Phone: {{ agency.phone }}</p>
+    <p>Rating:  {{ agency.rating }}</p>
+  </div>
+</div>
+
+{% endblock %}
+
+
