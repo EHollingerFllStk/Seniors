@@ -29,8 +29,14 @@
           <ul class="right">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
+            {% if user.is_authenticated %}
             <li><a href="{% url 'agencies_create' %}">Add an Agency</a></li>
             <li><a href="/agencies">View All My Agencies</a></li>
+            <li><a href="{% url 'logout' %}">Log Out</a></li>
+            {% else %}
+            <li><a href="{% url 'signup' %}">Sign Up</a></li>
+            <li><a href="{% url 'login' %}">Log In</a></li>
+            {% endif %}
           </ul>
         </div>
       </nav>
