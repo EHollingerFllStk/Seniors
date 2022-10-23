@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 from datetime import date
+from django.contrib.auth.models import User
 
 SERVICES = (
     ('B', 'Bathing'),
@@ -19,6 +20,7 @@ class Agencies(models.Model):
     address = models.TextField(max_length=250)
     phone = models.CharField(max_length=100)
     rating = models.IntegerField()
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
