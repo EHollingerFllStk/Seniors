@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Agencies
 from .forms import AddsForm
@@ -19,7 +19,7 @@ def agencies_index(request):
 def agencies_detail(request, agency_id):
   agency = Agencies.objects.get(id=agency_id)
   adds_form = AddsForm()
-  return render(request, 'agencies/detail.html', { 'agency': agency,  'adds_form': adds_form 
+  return render(request, 'agencies/detail.html', { 'agency': agency,  'adds_form': adds_form, 
   })
 
 class AgenciesCreate(CreateView):
@@ -34,6 +34,19 @@ class AgenciesUpdate(UpdateView):
 class AgenciesDelete(DeleteView):
   model = Agencies
   success_url = '/agencies/'
+
+def add_adds(request, agency_id):
+  form = AddsForm(request.POST)
+  if form.is_valid():
+    new_adds = form.save(commit=False)
+    new_adds.agency_id = agency_id
+    new_adds.save()
+  return redirect('detail', agency_id=agency_id)
+
+
+
+
+
 
 
 

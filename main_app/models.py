@@ -28,16 +28,17 @@ class Agencies(models.Model):
 
 
 class Adds(models.Model):
-    date = models.DateField()
+    date = models.DateField('service date')
     service = models.CharField(
         max_length=1,
         choices=SERVICES,
         default=SERVICES[0][0]
     )
 
-    agencies = models.ForeignKey(Agencies, on_delete=models.CASCADE)
+    agency = models.ForeignKey(Agencies, on_delete=models.CASCADE)
 
     def __str__(self):
         return f"{self.get_service_display()} on {self.date}"
 
-    
+    class Meta:
+        ordering = ['-date']
