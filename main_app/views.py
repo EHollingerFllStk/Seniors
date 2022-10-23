@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Agencies
 
 # Create your views here.
@@ -20,7 +20,15 @@ def agencies_detail(request, agency_id):
 
 class AgenciesCreate(CreateView):
   model = Agencies
-  fields = '__all__'
+  fields =['name','address', 'phone', 'rating']
+  success_url = '/agencies/'
+
+class AgenciesUpdate(UpdateView):
+  model = Agencies
+  fields = ['name','address', 'phone', 'rating']
+
+class AgenciesDelete(DeleteView):
+  model = Agencies
   success_url = '/agencies/'
 
 
