@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Agencies
+from .forms import AddsForm
+
 
 # Create your views here.
 
@@ -16,7 +18,9 @@ def agencies_index(request):
 
 def agencies_detail(request, agency_id):
   agency = Agencies.objects.get(id=agency_id)
-  return render(request, 'agencies/detail.html', { 'agency': agency })
+  adds_form = AddsForm()
+  return render(request, 'agencies/detail.html', { 'agency': agency,  'adds_form': adds_form 
+  })
 
 class AgenciesCreate(CreateView):
   model = Agencies
