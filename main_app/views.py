@@ -7,7 +7,7 @@ from .forms import AddsForm
 # Create your views here.
 
 def home(request):
-  return render('<h1>Hello World</h1>')
+  return render(request, 'home.html')
 
 def about(request):
   return render(request, 'about.html')
@@ -62,3 +62,4 @@ def add_adds(request, agency_id):
 #   Agencies('Visiting Angels Home Care','521 Bryn Mawr Ave. Bryn Mawr, PA 19634', '610-638-0639', 3),
 #   Agencies('Senior Living Home Health Care','523 Bryn Mawr Ave. Bryn Mawr, PA 19634', '610-638-0631', 4),
 # ]
+
