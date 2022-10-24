@@ -16,34 +16,61 @@
       type="text/css"
       href="{% static 'css/style.css' %}"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <header class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper">
-          <ul>
-            <li>
-              <a href="/" class="left brand-logo"> Senior Support</a>
-            </li>
-          </ul>
-          <ul class="right">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            {% if user.is_authenticated %}
-            <li><a href="{% url 'agencies_create' %}">Add an Agency</a></li>
-            <li><a href="/agencies">View All My Agencies</a></li>
-            <li><a href="{% url 'logout' %}">Log Out</a></li>
-            {% else %}
-            <li><a href="{% url 'signup' %}">Sign Up</a></li>
-            <li><a href="{% url 'login' %}">Log In</a></li>
-            {% endif %}
-          </ul>
-        </div>
-      </nav>
+      
+        <nav class="nav-wrapper #9fa8da indigo lighten-3">
+          <div class="container">
+            <ul>
+              <li>
+                <a href="/" class="brand-logo" id="brand"> Senior Support Services</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                  <i class="material-icons">menu</i>
+                </a>
+              </li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              {% if user.is_authenticated %}
+              <li><a href="{% url 'agencies_create' %}">Add an Agency</a></li>
+              <li><a href="/agencies">View All My Agencies</a></li>
+              <li><a href="{% url 'logout' %}">Log Out</a></li>
+              {% else %}
+              <li><a href="{% url 'signup' %}">Sign Up</a></li>
+              <li><a href="{% url 'login' %}">Log In</a></li>
+              {% endif %}
+            </ul>
+          </div>
+        </nav>
+      
     </header>
+    <ul class="sidenav" id="mobile-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      {% if user.is_authenticated %}
+      <li><a href="{% url 'agencies_create' %}">Add an Agency</a></li>
+      <li><a href="/agencies">View All My Agencies</a></li>
+      <li><a href="{% url 'logout' %}">Log Out</a></li>
+      {% else %}
+      <li><a href="{% url 'signup' %}">Sign Up</a></li>
+      <li><a href="{% url 'login' %}">Log In</a></li>
+      {% endif %}
+    </ul>
     <main class="container">{% block content %} {% endblock %}</main>
-    <footer class="page-footer">
-      <div class="right">All Rights Reserved, © 2022 Senior Support</div>
+    <footer class="page-footer #9fa8da indigo lighten-3">
+      <div class="right">All Rights Reserved, © 2022 Senior Support Services</div>
     </footer>
+    <script src ="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+            $('.sidenav').sidenav();
+      })
+    </script>
   </body>
 </html>

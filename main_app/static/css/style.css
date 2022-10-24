@@ -1,5 +1,5 @@
 body {
-    background-color: aquamarine;
+    background-color: #FDFDBD;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -11,5 +11,16 @@ body {
   
   footer {
     padding-top: 0;
+    padding-right: 10px;
     text-align: right;
+  }
+
+  @media only screen and (max-width: 750px) {
+    body {
+      background-color: lightblue;
+    }
+    #brand {
+      font-size: large;
+
+    }
   }
