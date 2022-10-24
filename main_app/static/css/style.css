@@ -1,5 +1,5 @@
 body {
-    background-color: #FDFDBD;
+    background-color: #FAFDD6;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -9,6 +9,11 @@ body {
     flex: 1 0 auto;
   }
   
+  .h1 {
+    font-family:'Montserrat', sans-ser;
+    font-weight: 500;
+  }
+
   footer {
     padding-top: 0;
     padding-right: 10px;
@@ -16,6 +21,13 @@ body {
   }
   .footer-link {
     padding: 10px;
+  }
+
+  tbody {
+    padding: 10px; }
+
+  .services {
+    margin:10px;
   }
 
   @media only screen and (max-width: 750px) {

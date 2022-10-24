@@ -1,8 +1,14 @@
 {% extends 'base.html' %} {% block content %}
 
-<h1>Agency Details</h1>
+<h1 class="h1">Agency Details and Schedule</h1>
 
 <div class="card">
+  <div class="card-image">
+    <img src="https://image.shutterstock.com/image-photo/caregivers-word-cloud-female-hands-260nw-770843521.jpg" alt="images of caregiving hands">
+    <a href="#" class="halfway-fab btn-floating pink">
+      <i class="material-icons">favorite</i>
+    </a>
+  </div>
   <div class="card-content">
     <span class="card-title">{{ agency.name }}</span>
     <p>Address: {{ agency.address }}</p>
@@ -13,23 +19,26 @@
     <a href="{% url 'agencies_update' agency.id %}">Edit</a>
     <a href="{% url 'agencies_delete' agency.id %}">Delete</a>
   </div>
-  <div class="col s6">
+</div>  
+  <hr />
+<div >
+    <p class=Services Provided></p>
     <form action="{% url 'add_adds' agency.id %}"method="post">
       {% csrf_token %} {{ adds_form.as_p }}
-      <input type="submit" class="btn" value="Add Service" />
+      <input type="submit" class="btn #9fa8da indigo lighten-3" value="Add Service" />
     </form>
     <table class="striped">
       <thead>
         <tr>
-          <th>Date</th>
-          <th>Services Provided</th>
+          <th class="center-align">Date</th>
+          <th class="center-align">Services Provided</th>
         </tr>
       </thead>
       <tbody>
         {% for adds in agency.adds_set.all %}
         <tr>
-          <td>{{adds.date}}</td>
-          <td>{{adds.get_service_display}}</td>
+          <td class="center-align">{{adds.date}}</td>
+          <td class="center-align">{{adds.get_service_display}}</td>
         </tr>
         {% endfor %}
       </tbody>
