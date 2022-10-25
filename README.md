@@ -27,12 +27,12 @@ Image of Agency Details Page.
 
 
 ## Technologies Used ##
-Django 
-PostgreSQL 
-Django Authentication/Authorization  
-Heroku 
-Materialize 
-HTML 
-CSS 
-JS 
-jQuery 
+Django   
+PostgreSQL  
+Django Authentication/Authorization   
+Heroku  
+Materialize  
+HTML  
+CSS  
+JS  
+jQuery  
