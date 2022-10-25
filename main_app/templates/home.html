@@ -1,24 +1,28 @@
 {% extends 'base.html' %} {% block content %}
 <style>
-    body {
-        background-image: url("https://api.benefits.gov//sites/default/files/2020-08/bWa5yiO%20-%20Imgur.jpg");
-        background-size: cover;
-        }
-    h1 {
-        text-align: center;
-    }
-    p {
-        text-align: center;
-    }
-
+  body {
+    background-image: url("https://api.benefits.gov//sites/default/files/2020-08/bWa5yiO%20-%20Imgur.jpg");
+    background-size: cover;
+  }
+  h1 {
+    font-weight: bold;
+    text-align: center;
+  }
+  .color {
+    text-align: center;
+    background-color: #f3e5f5 purple lighten-5;
+    
+  }
 </style>
 <h1>Senior Support Services</h1>
-<p class="flow-text">
-  Senior Support Services allows seniors and their loved ones to list, rate and
-  track agencies that provide support services to older adults in their homes.
-  If you find yourself overwhelmed with the multitude of agencies available for
-  the older population, this application will help keep you organized and give
-  you peace of mind.
-</p>
+<div class=color>
+  <p class="flow-text">
+    Senior Support Services allows seniors and their loved ones to list, rate
+    and track agencies that provide support services to older adults in their
+    homes. If you find yourself overwhelmed with the multitude of agencies
+    available for the older population, this application will help keep you
+    organized and give you peace of mind.
+  </p>
+</div>
 
 {% endblock %}

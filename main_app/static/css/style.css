@@ -1,9 +1,16 @@
 body {
-    background-color: #FAFDD6;
+    background-image: url("https://cdn1.vectorstock.com/i/1000x1000/45/40/soft-abstract-background-in-light-colors-vector-21474540.jpg");
+    background-size: cover;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    
   }
+  h1 {
+    color: #9e9e9e;
+    font-weight: bold;
+  }
+  
   
   main {
     flex: 1 0 auto;
@@ -12,6 +19,11 @@ body {
   .h1 {
     font-family:'Montserrat', sans-ser;
     font-weight: 500;
+  }
+  
+  #brand {
+    font-family:'Montserrat', sans-ser;
+    font-weight: 700;
   }
 
   footer {

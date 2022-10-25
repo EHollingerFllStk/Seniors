@@ -5,9 +5,9 @@
 <div class="card">
   <div class="card-image">
     <img src="https://image.shutterstock.com/image-photo/caregivers-word-cloud-female-hands-260nw-770843521.jpg" alt="images of caregiving hands">
-    <a href="#" class="halfway-fab btn-floating pink">
+    <!-- <a href="#" class="halfway-fab btn-floating pink">
       <i class="material-icons">favorite</i>
-    </a>
+    </a> -->
   </div>
   <div class="card-content">
     <span class="card-title">{{ agency.name }}</span>
@@ -16,8 +16,9 @@
     <p>Rating: {{ agency.rating }}</p>
   </div>
   <div class="card-action">
-    <a href="{% url 'agencies_update' agency.id %}">Edit</a>
-    <a href="{% url 'agencies_delete' agency.id %}">Delete</a>
+    <a class="purple-text"
+       href="{% url 'agencies_update' agency.id %}">Edit</a>
+    <a class="purple-text" href="{% url 'agencies_delete' agency.id %}">Delete</a>
   </div>
 </div>  
   <hr />
