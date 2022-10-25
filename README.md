@@ -14,5 +14,13 @@ I decided to create an app that would allow the user (me) to rate agencies and k
 beneficial and those that were not so helpful.   
        
 ## Screenshots ##
-Image of 
+
+Image of Home Page
+![Screen Shot 2022-10-25 at 3 55 10 PM](https://user-images.githubusercontent.com/111613075/197877718-4efb32e5-1264-4a16-bab4-ef73e393f954.png)
+
+
+Image of Agencies List Page
 ![Screen Shot 2022-10-25 at 3 58 52 PM](https://user-images.githubusercontent.com/111613075/197877378-498da3a5-b2c8-4472-b49e-0b5ab1689c61.png)
+
+Image of Agency Details Page. 
+![Screen Shot 2022-10-25 at 4 24 01 PM](https://user-images.githubusercontent.com/111613075/197877861-f42bcce8-e1bf-4290-93c8-0b99a2bb7ae0.png)
