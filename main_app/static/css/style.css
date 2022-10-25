@@ -5,12 +5,12 @@ body {
     min-height: 100vh;
     flex-direction: column;
     font-family:'Karla', sans-ser;
-    color: #616161;
+    /* color: #616161; */
   }
   h1 {
     color: #616161;
     font-weight: bold;
-    /* font-family: 'Zilla Slab', serif; */
+    font-family: 'Raleway', sans-serif;
   }
   
   main {
@@ -19,6 +19,7 @@ body {
   
   .h1 {
     font-family:'Karla', sans-ser;
+    color: #9fa8da;
   }
   
   #brand {
