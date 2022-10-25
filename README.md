@@ -42,4 +42,5 @@ jQuery
 
 
 ## Future Enhancements ##
-
+Additional CRUD features for Services
+Improved visuals
