@@ -24,3 +24,11 @@ Image of Agencies List Page
 
 Image of Agency Details Page. 
 ![Screen Shot 2022-10-25 at 4 24 01 PM](https://user-images.githubusercontent.com/111613075/197877861-f42bcce8-e1bf-4290-93c8-0b99a2bb7ae0.png)
+
+
+## Technologies Used ##
+*Djano
+*PostgreSQL
+*Django Authentication/Authorization
+*Heroku
+*Materialize
