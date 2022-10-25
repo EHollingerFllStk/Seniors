@@ -4,11 +4,13 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    
+    font-family:'Karla', sans-ser;
+    color: #616161;
   }
   h1 {
-    color: #757575;
+    color: #616161;
     font-weight: bold;
+    /* font-family: 'Zilla Slab', serif; */
   }
   
   main {
@@ -16,13 +18,11 @@ body {
   }
   
   .h1 {
-    font-family:'Montserrat', sans-ser;
-    font-weight: 500;
+    font-family:'Karla', sans-ser;
   }
   
   #brand {
-    font-family:'Montserrat', sans-ser;
-    font-weight: 700;
+    font-family:'Karla', sans-ser;  
   }
 
   footer {
