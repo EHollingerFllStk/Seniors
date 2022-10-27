@@ -20,10 +20,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Raleway&display=swap" rel="stylesheet">
-    
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Raleway&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/975dd5cd0d.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="navbar-fixed">
@@ -79,20 +79,20 @@
           <div class="col s12 l6 l4 offset-12">
             <h5>Connect</h5>
             <ul>
-              <li>
-                <a
-                  class="footer-link"
-                  href="https://www.linkedin.com/in/elizabeth-hollinger-dpt-31683b128/"
-                  >LinkedIn</a
-                >
-              </li>
-              <li>
-                <a
-                  class="footer-link"
-                  href="https://github.com/EHollingerFllStk"
-                  >GitHub</a
-                >
-              </li>
+            <section>
+              <footer-link>
+                <li><a href="https://www.linkedin.com/in/elizabeth-hollinger-dpt-31683b128/" class="tooltipped btn-floating btn-small #2962ff blue accent-4" data-tooltip="This is LinkedIn" id="link">
+                  <i class="fab fa-linkedin"></i>
+                </a></li>
+              </footer-link>
+            </section>
+            <section>
+              <footer-link>
+                <li><a href="https://github.com/EHollingerFllStk" class="tooltipped btn-floating btn-small #000000 black" data-tooltip="This is GitHub" id="link">
+                  <i class="fab fa-github"></i>
+                </a> </li>
+              </footer-link>
+              </section>
             </ul>
           </div>
         </div>
@@ -109,6 +109,8 @@
       $(document).ready(function () {
         $(".sidenav").sidenav();
       });
+      $('.tooltipped').tooltip()
+
     </script>
   </body>
 </html>
